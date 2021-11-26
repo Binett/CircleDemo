@@ -9,7 +9,7 @@ describe("Testing with Jest", () => {
 
   // Jest also allows a test to run multiple
   // times using different values
-  test.each([[1, 1, 2],[-1, 1, 0],[3, 2, 5],])(
+  test.each([[1, 1, 2],[-1, 1, 0],[3, 2, 5],[1,6,7]])(
     "Does %i + %i equals %i", (a, b, expectedResult) => {
     expect(sum(a, b)).toBe(expectedResult);
   });
